@@ -1,0 +1,858 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+  font-family: 'SaolDisplay-Light';
+  src: url("../../public/fonts/SaolDisplay-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SaolDisplay-LightItalic';
+  src: url("../../public/fonts/SaolDisplay-LightItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-primary: #0d382c;
+  --color-secondary: #f6a17c;
+  --color-white: #f9fbff;
+}
+
+.gallery-header {
+  width: 100vw;
+  height: 97vh;
+  position: relative;
+}
+
+.gallery-header__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: inset(16% 33% 16% 33%);
+          clip-path: inset(16% 33% 16% 33%);
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: 45rem !important;
+  -webkit-transition: all 1s 0.2s ease-in-out;
+  transition: all 1s 0.2s ease-in-out;
+}
+
+.gallery-header__image--lifestyles {
+  background: url("../../public/images/life1.jpeg");
+}
+
+.gallery-header__image--cultures {
+  background: url("../../public/images/cul8.jpg");
+}
+
+.gallery-header__image--fitness {
+  background: url("../../public/images/ring3.jpg");
+  background-position: 50rem !important;
+  background-size: contain !important;
+}
+
+.gallery-header__image--automotives {
+  background: url("../../public/images/g1.jpg");
+}
+
+@media only screen and (max-width: 62.5em) {
+  .gallery-header__image {
+    -webkit-clip-path: inset(16% 20% 16% 20%);
+            clip-path: inset(16% 20% 16% 20%);
+  }
+}
+
+.gallery-header__text1, .gallery-header__text2 {
+  position: absolute;
+  top: 19rem;
+  left: 18rem;
+  font-family: "SaolDisplay-Light", serif;
+  color: var(--color-secondary);
+  font-weight: normal;
+  font-size: 16vw;
+  line-height: 92.4%;
+  letter-spacing: -0.045em;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .gallery-header__text1, .gallery-header__text2 {
+    left: 13rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .gallery-header__text1, .gallery-header__text2 {
+    left: 8rem;
+    font-size: 18vw;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  .gallery-header__text1, .gallery-header__text2 {
+    left: 5rem;
+  }
+}
+
+.gallery-header__text2 {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-secondary);
+}
+
+@media only screen and (max-width: 57.5em) {
+  .gallery-header__text2 {
+    -webkit-text-stroke: 1px var(--color-secondary);
+  }
+}
+
+.gallery-header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50rem;
+  left: 19rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .gallery-header__info {
+    left: 13rem;
+    top: 35rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .gallery-header__info {
+    left: 9rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  .gallery-header__info {
+    left: 5rem;
+  }
+}
+
+.gallery-header__info--p {
+  color: var(--color-white);
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 92.4%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.gallery-header__info--p:nth-of-type(2) {
+  margin-left: 15rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .gallery-header__info--p:nth-of-type(2) {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+}
+
+.project-clippy {
+  -webkit-clip-path: inset(14% 27% 12% 46%);
+          clip-path: inset(14% 27% 12% 46%);
+}
+
+@media only screen and (max-width: 62.5em) {
+  .project-clippy {
+    -webkit-clip-path: inset(14% 20% 12% 46%);
+            clip-path: inset(14% 20% 12% 46%);
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .project-clippy {
+    -webkit-clip-path: inset(14% 12% 12% 32%);
+            clip-path: inset(14% 12% 12% 32%);
+  }
+}
+
+.section-showcase {
+  padding: 10rem 25rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .section-showcase {
+    padding: 5rem 10rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-showcase {
+    padding: 4rem 8rem;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  .section-showcase {
+    padding: 4rem 5rem;
+  }
+}
+
+.section-showcase__img {
+  background-position: center !important;
+  background-size: 120% !important;
+  background-repeat: no-repeat !important;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.section-showcase__img:hover {
+  background-size: 110% !important;
+}
+
+.section-showcase__img:nth-of-type(1) {
+  width: 38%;
+  height: 68.4rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .section-showcase__img:nth-of-type(1) {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-showcase__img:nth-of-type(1) {
+    width: 68%;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  .section-showcase__img:nth-of-type(1) {
+    width: 88%;
+  }
+}
+
+.section-showcase__img:nth-of-type(2) {
+  width: 54%;
+  height: 35rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .section-showcase__img:nth-of-type(2) {
+    width: 64%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-showcase__img:nth-of-type(2) {
+    width: 84%;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  .section-showcase__img:nth-of-type(2) {
+    width: 94%;
+  }
+}
+
+.section-showcase__img:nth-of-type(3) {
+  width: 100%;
+  height: 53rem;
+}
+
+.section-showcase__img:nth-of-type(4) {
+  width: 57%;
+  height: 38rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .section-showcase__img:nth-of-type(4) {
+    width: 67%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-showcase__img:nth-of-type(4) {
+    width: 87%;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  .section-showcase__img:nth-of-type(4) {
+    width: 98%;
+  }
+}
+
+.section-showcase__img:nth-of-type(5) {
+  width: 33%;
+  height: 43rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .section-showcase__img:nth-of-type(5) {
+    width: 44%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-showcase__img:nth-of-type(5) {
+    width: 64%;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  .section-showcase__img:nth-of-type(5) {
+    width: 88%;
+  }
+}
+
+.section-showcase__img--lifestyles:nth-of-type(1) {
+  background: url("../../public/images/life6.jpeg");
+}
+
+.section-showcase__img--lifestyles:nth-of-type(2) {
+  background: url("../../public/images/life3.jpeg");
+}
+
+.section-showcase__img--lifestyles:nth-of-type(3) {
+  background: url("../../public/images/life7.jpeg");
+}
+
+.section-showcase__img--lifestyles:nth-of-type(4) {
+  background: url("../../public/images/life4.jpeg");
+}
+
+.section-showcase__img--lifestyles:nth-of-type(5) {
+  background: url("../../public/images/life8.jpeg");
+}
+
+.section-showcase__img--cultures:nth-of-type(1) {
+  background: url("../../public/images/cul2.jpg");
+}
+
+.section-showcase__img--cultures:nth-of-type(2) {
+  background: url("../../public/images/cul3.jpg");
+}
+
+.section-showcase__img--cultures:nth-of-type(3) {
+  background: url("../../public/images/cul7.jpg");
+}
+
+.section-showcase__img--cultures:nth-of-type(4) {
+  background: url("../../public/images/cul8.jpg");
+}
+
+.section-showcase__img--fitness:nth-of-type(1) {
+  background: url("../../public/images/wed2.jpg");
+}
+
+.section-showcase__img--fitness:nth-of-type(2) {
+  background: url("../../public/images/wed3.jpg");
+}
+
+.section-showcase__img--fitness:nth-of-type(3) {
+  background: url("../../public/images/life2.jpeg");
+}
+
+.section-showcase__img--fitness:nth-of-type(4) {
+  background: url("../../public/images/wed5.jpg");
+}
+
+.section-showcase__img--automotives:nth-of-type(1) {
+  background: url("../../public/images/g3.jpg");
+}
+
+.section-showcase__img--automotives:nth-of-type(2) {
+  background: url("../../public/images/g5.jpg");
+}
+
+.section-showcase__img--automotives:nth-of-type(3) {
+  background: url("../../public/images/g4.jpg");
+}
+
+.section-showcase__img--automotives:nth-of-type(4) {
+  background: url("../../public/images/g1.jpg");
+}
+
+.footer {
+  padding: 3rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #111;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .footer {
+    padding: 2rem 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.footer strong {
+  color: gold;
+}
+
+.footer small {
+  color: lightgray;
+}
+
+.footer__p {
+  width: 40%;
+  font-family: "SaolDisplay-Light", serif;
+  color: white;
+  font-weight: normal;
+  font-size: 1.7rem;
+  line-height: 138.9%;
+  letter-spacing: 0.02em;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .footer__p {
+    width: 90%;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.footer__copyright {
+  width: 14rem;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  overflow-y: scroll;
+}
+
+.home-header {
+  scroll-snap-align: start;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-header__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../public/images/life6.jpeg");
+  background-size: 42rem;
+  background-position: bottom;
+  padding: 2rem;
+  color: var(--color-primary);
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: inset(15% 40.1% 15% 40% round 25vw 25vw 25.01vw 25.01vw);
+          clip-path: inset(15% 40.1% 15% 40% round 25vw 25vw 25.01vw 25.01vw);
+  -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.home-header__text {
+  position: absolute;
+  top: 17%;
+  left: 5%;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.clippy {
+  -webkit-clip-path: inset(25% 0% 18.5% 43% round 10vw 0vw 0vw 10vw);
+          clip-path: inset(25% 0% 18.5% 43% round 10vw 0vw 0vw 10vw);
+}
+
+.brand-logo {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+.brand-logo h6 {
+  color: white;
+  font-family: "SaolDisplay-Light", serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: bisque;
+}
+
+.hero-text {
+  overflow: hidden;
+}
+
+.hero-text__h1, .hero-text__h1--small {
+  display: inline-block;
+  position: relative;
+  font-family: "SaolDisplay-Light", serif;
+  font-weight: normal;
+  font-size: 10rem;
+  line-height: 92px;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .hero-text__h1, .hero-text__h1--small {
+    font-size: 8rem;
+    line-height: 72px;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  .hero-text__h1, .hero-text__h1--small {
+    font-size: 6rem;
+    line-height: 52px;
+  }
+}
+
+.hero-text__h1--small {
+  font-family: "SaolDisplay-LightItalic", serif;
+  text-transform: lowercase;
+}
+
+.section-projects {
+  scroll-snap-align: start;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.screen-full {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../../public/images/life1.jpeg");
+  opacity: 0.4;
+  background: url("../../public/images/life1.jpeg");
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.screen-clip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: inset(16% 33% 16% 33%);
+          clip-path: inset(16% 33% 16% 33%);
+  background: url("../../public/images/life1.jpeg");
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .screen-clip {
+    -webkit-clip-path: inset(16% 20% 16% 20%);
+            clip-path: inset(16% 20% 16% 20%);
+  }
+}
+
+.clip-1 {
+  background: url("../../public/images/life1.jpeg");
+  background-size: cover;
+}
+
+.clip-2 {
+  background: url("../../public/images/cul8.jpg");
+  background-size: cover;
+}
+
+.clip-3 {
+  background: url("../../public/images/life2.jpeg");
+}
+
+.clip-4 {
+  background: url("../../public/images/g4.jpg");
+}
+
+.screen-details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.screen-details__list {
+  margin-top: 7rem;
+  margin-bottom: 8rem;
+}
+
+.screen-details__item {
+  list-style: none;
+  font-family: "SaolDisplay-Light", serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.screen-details__item:hover {
+  font-family: "SaolDisplay-LightItalic", serif;
+  padding-left: 3rem;
+}
+
+.screen-details__item a {
+  color: var(--color-white);
+  font-weight: normal;
+  font-size: 6.9rem;
+  line-height: 183.4%;
+  letter-spacing: -0.07em;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .screen-details__item a {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  .screen-details__item a {
+    font-size: 5rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 51%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif, sans-serif;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+/*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh;
+}
+
+[data-scroll-direction='horizontal'] [data-scroll-container] {
+  height: 100vh;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+[data-scroll-direction='horizontal'] [data-scroll-section] {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  opacity: 0;
+}
+
+.c-scrollbar:hover {
+  -webkit-transform: scaleX(1.45);
+          transform: scaleX(1.45);
+}
+
+.c-scrollbar:hover,
+.has-scroll-scrolling .c-scrollbar,
+.has-scroll-dragging .c-scrollbar {
+  opacity: 1;
+}
+
+[data-scroll-direction='horizontal'] .c-scrollbar {
+  width: 100%;
+  height: 10px;
+  top: auto;
+  bottom: 0;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+[data-scroll-direction='horizontal'] .c-scrollbar:hover {
+  -webkit-transform: scaleY(1.3);
+          transform: scaleY(1.3);
+}
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 0px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+[data-scroll-direction='horizontal'] .c-scrollbar_thumb {
+  right: auto;
+  bottom: 0;
+}
+
+.heading-3 {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-white);
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 92.4%;
+  letter-spacing: 0.505em;
+  margin-bottom: 3rem;
+}
+
+.heading-5 {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 92.4%;
+  letter-spacing: 0.505em;
+}
+/*# sourceMappingURL=global.css.map */

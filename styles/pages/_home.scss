@@ -1,0 +1,180 @@
+.container {
+  width: 100%;
+  height: 100%;
+  scroll-snap-type: mandatory;
+  overflow-y: scroll;
+}
+
+.home-header {
+  scroll-snap-align: start;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../../public/images/life6.jpeg');
+    background-size: 42rem;
+    background-position: bottom;
+    padding: 2rem;
+    color: var(--color-primary);
+    width: 100%;
+    height: 100%;
+    clip-path: inset(15% 40.1% 15% 40% round 25vw 25vw 25.01vw 25.01vw);
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  &__text {
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.clippy {
+  clip-path: inset(25% 0% 18.5% 43% round 10vw 0vw 0vw 10vw);
+}
+
+.brand-logo {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  h6 {
+    color: white;
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: bisque;
+  }
+}
+
+.hero-text {
+  overflow: hidden;
+  &__h1 {
+    display: inline-block;
+    position: relative;
+    font-family: $font-secondary;
+    font-weight: normal;
+    font-size: 10rem;
+    line-height: 92px;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 8rem;
+      line-height: 72px;
+    }
+    @media only screen and (max-width: 28.125em) {
+      font-size: 6rem;
+      line-height: 52px;
+    }
+
+    &--small {
+      @extend .hero-text__h1;
+      font-family: $font-tertiary;
+      text-transform: lowercase;
+    }
+  }
+}
+
+.section-projects {
+  scroll-snap-align: start;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.screen-full {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url('../../public/images/life1.jpeg');
+  opacity: 0.4;
+  background: url('../../public/images/life1.jpeg');
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  transition: all 0.2s ease-in-out;
+}
+.screen-clip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  clip-path: inset(16% 33% 16% 33%);
+  background: url('../../public/images/life1.jpeg');
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  transition: all 0.2s ease-in-out;
+  @media only screen and (max-width: 62.5em) {
+    clip-path: inset(16% 20% 16% 20%);
+  }
+}
+
+.clip-1 {
+  background: url('../../public/images/life1.jpeg');
+  background-size: cover;
+}
+.clip-2 {
+  background: url('../../public/images/cul8.jpg');
+  background-size: cover;
+}
+.clip-3 {
+  background: url('../../public/images/life2.jpeg');
+}
+.clip-4 {
+  background: url('../../public/images/g4.jpg');
+}
+
+.screen-details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &__list {
+    margin-top: 7rem;
+    margin-bottom: 8rem;
+  }
+  &__item {
+    list-style: none;
+    font-family: $font-secondary;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      font-family: $font-tertiary;
+      padding-left: 3rem;
+    }
+    a {
+      color: var(--color-white);
+      font-weight: normal;
+      font-size: 6.9rem;
+      line-height: 183.4%;
+      letter-spacing: -0.07em;
+      text-decoration: none;
+      @media only screen and (max-width: 37.5em) {
+        font-size: 6rem;
+      }
+      @media only screen and (max-width: 28.125em) {
+        font-size: 5rem;
+      }
+    }
+  }
+}

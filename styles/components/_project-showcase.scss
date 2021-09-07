@@ -1,0 +1,300 @@
+.gallery-header {
+  width: 100vw;
+  height: 97vh;
+  position: relative;
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    clip-path: inset(16% 33% 16% 33%);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 45rem !important;
+    transition: all 1s 0.2s ease-in-out;
+    &--lifestyles {
+      background: url('../../public/images/life1.jpeg');
+    }
+    &--cultures {
+      background: url('../../public/images/cul8.jpg');
+    }
+    &--fitness {
+      background: url('../../public/images/ring3.jpg');
+        background-position: 50rem !important;
+        background-size: contain !important;
+    }
+    &--automotives {
+      background: url('../../public/images/g1.jpg');
+    }
+    @media only screen and (max-width: 62.5em) {
+      clip-path: inset(16% 20% 16% 20%);
+    }
+  }
+  &__text1 {
+    position: absolute;
+    top: 19rem;
+    left: 18rem;
+    font-family: $font-secondary;
+    color: var(--color-secondary);
+    font-weight: normal;
+    font-size: 16vw;
+    line-height: 92.4%;
+    letter-spacing: -0.045em;
+    transition: all 1s ease-in-out;
+
+    @media only screen and (max-width: 62.5em) {
+      left: 13rem;
+    }
+    @media only screen and (max-width: 37.5em) {
+      left: 8rem;
+      font-size: 18vw;
+    }
+    @media only screen and (max-width: 28.125em) {
+      left: 5rem;
+    }
+  }
+  &__text2 {
+    @extend .gallery-header__text1;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--color-secondary);
+    @media only screen and (max-width: 57.5em) {
+      -webkit-text-stroke: 1px var(--color-secondary);
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50rem;
+    left: 19rem;
+
+    @media only screen and (max-width: 62.5em) {
+      left: 13rem;
+      top: 35rem;
+    }
+    @media only screen and (max-width: 37.5em) {
+      left: 9rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @media only screen and (max-width: 28.125em) {
+      left: 5rem;
+    }
+    &--p {
+      color: var(--color-white);
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 92.4%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      &:nth-of-type(2) {
+        margin-left: 15rem;
+        @media only screen and (max-width: 37.5em) {
+          margin-left: 0rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.project-clippy {
+  clip-path: inset(14% 27% 12% 46%);
+  @media only screen and (max-width: 62.5em) {
+    clip-path: inset(14% 20% 12% 46%);
+  }
+  @media only screen and (max-width: 37.5em) {
+    clip-path: inset(14% 12% 12% 32%);
+  }
+}
+
+.section-showcase {
+  padding: 10rem 25rem;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: 62.5em) {
+    padding: 5rem 10rem;
+  }
+  @media only screen and (max-width: 37.5em) {
+    padding: 4rem 8rem;
+  }
+  @media only screen and (max-width: 28.125em) {
+    padding: 4rem 5rem;
+  }
+
+  &__img {
+    background-position: center !important;
+    background-size: 120% !important;
+    background-repeat: no-repeat !important;
+    transition: all 0.3s ease-in-out !important;
+    &:hover {
+      background-size: 110% !important;
+    }
+
+    &:nth-of-type(1) {
+      width: 38%;
+      height: 68.4rem;
+      // background: url('../../public/images/lifestyles/lifestyle-1.webp');
+      @media only screen and (max-width: 62.5em) {
+        width: 48%;
+      }
+      @media only screen and (max-width: 37.5em) {
+        width: 68%;
+      }
+      @media only screen and (max-width: 28.125em) {
+        width: 88%;
+      }
+    }
+    &:nth-of-type(2) {
+      width: 54%;
+      height: 35rem;
+      // background: url('../../public/images/lifestyles/lifestyle-3.webp');
+      align-self: flex-end;
+      @media only screen and (max-width: 62.5em) {
+        width: 64%;
+      }
+      @media only screen and (max-width: 37.5em) {
+        width: 84%;
+      }
+      @media only screen and (max-width: 28.125em) {
+        width: 94%;
+      }
+    }
+    &:nth-of-type(3) {
+      width: 100%;
+      height: 53rem;
+      // background: url('../../public/images/lifestyles/lifestyle-2.webp');
+    }
+    &:nth-of-type(4) {
+      width: 57%;
+      height: 38rem;
+      // background: url('../../public/images/lifestyles/lifestyle-4.webp');
+      @media only screen and (max-width: 62.5em) {
+        width: 67%;
+      }
+      @media only screen and (max-width: 37.5em) {
+        width: 87%;
+      }
+      @media only screen and (max-width: 28.125em) {
+        width: 98%;
+      }
+    }
+    &:nth-of-type(5) {
+      width: 33%;
+      height: 43rem;
+      // background: url('../../public/images/lifestyles/lifestyle-5.webp');
+      align-self: flex-end;
+      @media only screen and (max-width: 62.5em) {
+        width: 44%;
+      }
+      @media only screen and (max-width: 37.5em) {
+        width: 64%;
+      }
+      @media only screen and (max-width: 28.125em) {
+        width: 88%;
+      }
+    }
+
+    &--lifestyles {
+      &:nth-of-type(1) {
+        background: url('../../public/images/life6.jpeg');
+      }
+      &:nth-of-type(2) {
+        background: url('../../public/images/life3.jpeg');
+      }
+      &:nth-of-type(3) {
+        background: url('../../public/images/life7.jpeg');
+      }
+      &:nth-of-type(4) {
+        background: url('../../public/images/life4.jpeg');
+      }
+      &:nth-of-type(5) {
+        background: url('../../public/images/life8.jpeg');
+      }
+    }
+    &--cultures {
+      &:nth-of-type(1) {
+        background: url('../../public/images/cul2.jpg');
+      }
+      &:nth-of-type(2) {
+        background: url('../../public/images/cul3.jpg');
+      }
+      &:nth-of-type(3) {
+        background: url('../../public/images/cul7.jpg');
+      }
+      &:nth-of-type(4) {
+        background: url('../../public/images/cul8.jpg');
+      }
+    }
+    &--fitness {
+      &:nth-of-type(1) {
+        background: url('../../public/images/wed2.jpg');
+      }
+      &:nth-of-type(2) {
+        background: url('../../public/images/wed3.jpg');
+      }
+      &:nth-of-type(3) {
+        background: url('../../public/images/life2.jpeg');
+      }
+      &:nth-of-type(4) {
+        background: url('../../public/images/wed5.jpg');
+      }
+    }
+    &--automotives {
+      &:nth-of-type(1) {
+        background: url('../../public/images/g3.jpg');
+      }
+      &:nth-of-type(2) {
+        background: url('../../public/images/g5.jpg');
+      }
+      &:nth-of-type(3) {
+        background: url('../../public/images/g4.jpg');
+      }
+      &:nth-of-type(4) {
+        background: url('../../public/images/g1.jpg');
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 3rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #111;
+
+  @media only screen and (max-width: 37.5em) {
+    padding: 2rem 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  strong{
+    color: gold;
+  }
+  small{
+   color: lightgray;
+  }
+  &__p {
+    width: 40%;
+    font-family: $font-secondary;
+    color: white;
+    font-weight: normal;
+    font-size: 1.7rem;
+    line-height: 138.9%;
+    letter-spacing: 0.02em;
+    @media only screen and (max-width: 37.5em) {
+      width: 90%;
+      font-size: 1.4rem;
+      margin-bottom: 3rem;
+    }
+  }
+  &__copyright {
+    width: 14rem;
+  }
+}
