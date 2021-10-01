@@ -38,6 +38,9 @@ body {
   overflow-x: hidden;
   background-color:black;
 }
+::-webkit-scrollbar{
+   display: none;
+}
 
 /*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
